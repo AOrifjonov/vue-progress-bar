@@ -7,8 +7,8 @@
         </header>
         <nav>
           <a href="#">ABOUT US</a>
-          <a href="#">CONTACT</a>
-          <a href="#">PORTFOLIO</a>
+          <a class="a2" href="#">CONTACT</a>
+          <a href="https://github.com/AOrifjonov" target="__blank">PORTFOLIO</a>
         </nav>
       </div>
       <Progressbar :progress="progress" />
@@ -76,5 +76,17 @@ nav a {
   color: #fff;
   text-decoration: none;
   padding: 7px;
+}
+
+@media (max-width: 650px) {
+  header h1 {
+    display: none;
+  }
+}
+
+@media (max-width: 354px) {
+  .a2 {
+    display: none;
+  }
 }
 </style>
